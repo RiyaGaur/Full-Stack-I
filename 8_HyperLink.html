@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+</head>
+<body>
+    <h1>Hyperlinks</h1>
+    <p style="color: blue;">The acronym HTML stands for hypertext, or text that is linked to other information. HTML enables us to link to other Web pages, as well as graphics, multimedia, e-mail addresses, newsgroups, and downloadable files. Anything you can access through your browser can be linked to from within an HTML document. 
+
+        Web pages can contain links that take you directly to other pages and even specific parts of a given page. These links are known as hyperlinks. A hyperlink is text, an image, or any other object in an HTML document that can be clicked in order to gain access to another web document.</p>
+    
+    <h1>Linking Documents - The &lt;a&gt; Element &lt;/a&gt;</h2>
+
+        <p style="color: blue;">link is specified using the &lt;a&gt; element. This element is called anchor tag as well. Anything between the opening &lt;a&gt; tag and the closing &lt;/a&gt; tag becomes part of the link and a user can click that part to reach to the linked document.</p>
+    
+    <h2>Some Hyperlinks</h1>
+    <xmp>
+        <a title="Google Link" href="https://www.google.com/" target="_blank">Google</a><br>
+        <a title="Yahoo Link" href="https://in.search.yahoo.com/">yahoo</a>
+    </xmp>
+    <a title="Google Link" href="https://www.google.com/" target="_blank">Google</a><br>
+    <a title="Yahoo Link" href="https://in.search.yahoo.com/">yahoo</a>
+    
+    <h1>External Linking </h1>
+
+    <p style="color: blue;">The &lt;a&gt; tag itself doesn’t serve much purpose without its attributes. The most common attribute is href, which is short for hypertext reference: it tells the browser where to find the information to which you are linking. The text included in between the opening and closing a tag is what the person viewing your Web page can click.</p>
+    <h1>Anchor Attributes</h1>
+
+    <p style="color: blue;">Following are most frequently used attributes for &lt;a&gt; tag.
+    <ul>
+        <li><strong> href:</strong> <p style="color: cornflowerblue;"> specifies the URL of the target of a hyperlink. Its value is any valid document URL, absolute or relative, including a fragment identifier or a JavaScript code fragment.</p></li>
+        <li><strong>target:</strong> <p style="color: cornflowerblue;"> where to display the contents of a selected hyperlink. If set to "_blank" then a new window will be opened to display the loaded page, if set to "_self" then loads the new page in current window. By default its "_self", if set to "_name" then open the link in the window of that name.</p></li>
+        <li><strong>name & id:</strong> <p style="color: cornflowerblue;"> attributes places a label within a document. When that label is used in a link to that document, it is the equivalent of telling the browser to goto that label.</p></li>
+        <li><strong>event:</strong> <p style="color: cornflowerblue;"> attributes like onClick, onMouseOver etc. are used to trigger any Javascript or VBscript code.</p></li>
+        <li><strong>title:</strong> <p style="color: cornflowerblue;"> attribute lets you specify a title for the document to which you are linking. The value of the attribute is any string, enclosed in quotation marks. The browser might use it when displaying the link, perhaps flashing the title when the mouse passes over the link.</p></li> 
+    </ul>
+    </p>
+    <h1>Internal Linking </h1>
+
+    <p style="color: blue;"><strong> Path for Links:</strong> It is not required to give a complete URL for every link. You can get rid of it if you will use &lt;base&gt; tag in your header. This tag is used to give a base path for all the links. So your browser will concatenate given relative path to this base path and will make a complete URL.</p>
+    Two basic types of links exist. 
+    <ul>
+        <li>Absolute</li>
+        <li>Relative </li>
+    </ul>
+    <div style="color: blue;">
+    <strong> Absolute Links: </strong> Absolute links are those that include the entire pathname. In most cases, you use absolute links when linking to pages or sites that are not part of your own Web site. For example, if you are linking from your Web site to Yahoo!, you type “http://www.yahoo.com” as your link.
+    <xmp>
+        <a href="https://in.search.yahoo.com/">yahoo</a>
+    </xmp>
+    <a title="Yahoo Link" href="https://in.search.yahoo.com/">yahoo</a><br>
+    <br>
+    <strong> Relative Links: </strong> Relative links are called so because you don’t include the entire pathname of the page to which you are linking. Instead, the pathname you use is relative to the current page. Relative links are most commonly used when you want to link from one page in your site to another. Here’s an example of what a relative link might look like: 
+    <xmp>
+        <a href="1_First Web Page.html">First Web Page</a>
+    </xmp>
+    <a href="1_First Web Page.html">First Web Page</a><br>
+    <br>
+    </div>
+</body>
+</html>
