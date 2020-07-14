@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyperlinks</title>
+    <style>
+        a:link{
+            color: hotpink;
+        }
+        a:hover{
+            color: indigo;
+        }
+        a:active{
+            color: green;
+        }
+        a:visited {
+            color: lightseagreen;
+        }
+    </style>
 </head>
 <body>
     <h1>Hyperlinks</h1>
@@ -59,5 +73,59 @@
     <a href="1_First Web Page.html">First Web Page</a><br>
     <br>
     </div>
+    <h2>Links to Sections within the Same Page</h2>
+    <a name="top"></a>
+    <a href="#section1">Jump to section 1</a>
+    <a href="#section2">Jump to section 2</a>
+    <a href="#section3">Jump to section 3</a>
+    <hr />
+    <a name="section1"><b>Section 1</b></a>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p><a href="#top">Back to the top</a></p>
+    <hr />
+    <a name="section2"><b>Section 2</b></a>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p><a href="#top">Back to the top</a></p>
+    <hr />
+    <a name="section3"><b>Section 3</b></a>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p><a href="#top">Back to the top</a></p>
+    <hr />
+    <h1>Create an Anchor</h1>
+
+    <p style="color: blue;">An anchor is a place within a page that is given a special name, enabling you to link to it later. Without first naming a section, you cannot link to it.</p>
+    Example:
+    <xmp>
+        <a name="section1"><b>Section 1</b></a>
+    </xmp>
+    <h1>Link to an Anchor </h1>
+
+    <p style="color: blue;">To create the link to an anchor, you also use the a tag and the href attribute, as you would when creating any other type of link. To finish the link, you need to include a hash symbol (#) and the anchor name as the value of the href attribute.</p>
+    Example:
+    <xmp>
+        <a href="https://www.google.com/" >Google</a> 
+    </xmp>
+    <h1>Links to E-mail Addresses</h1> 
+
+    <p style="color: blue;"> When you want to give someone easy access to your e-mail address, you can include it on your page as a mailto link. This means instead of using http:// in front of your links, you use mailto: to preface youre-mail addresses. </p>
+    Example:
+    <xmp>
+        <a href="mailto:riyagaur15@gmail.com" >Mail Me</a>
+    </xmp>
+    <a href="mailto:riyagaur15@gmail.com" >Mail Me</a>
+    <h1>Target Windows</h1>
+
+    <p style="color: blue;">Have you ever visited a Web site and noticed that a second instance of the Web browser opened when you clicked a link? This happens when Web developers use the target attribute to load links in a browser window other than the one you are currently using.</p>
+    Example:
+    <h3>For the same Window:</h3>
+    <xmp>
+        <a title="Google Link" href="https://www.google.com/" target="_self">Google</a>
+    </xmp>
+    <a title="Google Link" href="https://www.google.com/" target="_blank">Google</a><br>
+    <h3>For the new window:</h3>
+    <xmp>
+        <a title="Google Link" href="https://www.google.com/" target="_blank">Google</a>
+    </xmp>
+    <a title="Google Link" href="https://www.google.com/" target="_blank">Google</a><br>
 </body>
 </html>
