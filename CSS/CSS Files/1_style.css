@@ -1,0 +1,16 @@
+body {
+    background-color: lightgray;
+}
+.main1 {
+    text-align: center;
+}
+.name1 {
+    color: dimgray;
+    font-size: 50px;
+    font-weight: bold;
+}
+#learn1 {
+    color: #898989;
+    font-style: italic;
+    font-size: 20px;
+}  

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <!-- Internal CSS-->
+    <style>
+        p{
+            color: blue;
+        }
+        ul{
+            color: hotpink;
+        }
+        
+       
+        .main {
+            text-align: center;
+        }
+        .name {
+            color: #049ca2;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .learn {
+            font-style: bold;
+            font-size: 20px;
+        }
+            
+            
+        
+    </style>
+    <link rel="stylesheet" href="CSS Files/1_style.css"/>
+</head>
+<body>
+    <h1>Intoduction to CSS</h1>
+    <p>CSS is short for Cascading Style Sheets, and is the preferred way for setting the look and feel of a website. Cascading Style Sheets (CSS) is a markup language responsible for how your web pages will look like. It controls the colors, fonts, and layouts of your website elements.</p>
+    <h2>CSS - Syntax</h2>
+    <p>A CSS comprises of style rules that are interpreted by the browser and then applied to the corresponding elements in your document. A style rule is made of three parts −
+        <ul>
+            <li>Selector − A selector is an HTML tag at which a style will be applied. This could be any tag like &lt;h1&gt; or &lt;table&gt; etc.</li>
+        
+            <li>Property − A property is a type of attribute of HTML tag. Put simply, all the HTML attributes are converted into CSS properties. They could be color, border etc.</li>
+        
+            <li>Value − Values are assigned to properties. For example, color property can have value either red or #F1F1F1 etc.</li>
+        </ul>
+    </p>
+    <h4> You can put CSS Style Rule Syntax as follows −</h4>
+        
+        selector { property: value }
+    <h2>Types of CSS</h2>
+    <p>There is three type (ways to use) of Cascading Style Sheets
+        <ul>
+            <li>Inline CSS</li>
+            
+            <li>Internal or Embedded CSS</li>
+            
+            <li>External CSS </li>
+        </ul>
+    </p>
+
+    <h2>Inline CSS</h2>
+    <p>With inline CSS you have to dine a css in the HTML tag, for example, you are using &lt;p&gt; tag than inside open this tag have to write style = “property: value;”>. See the below example a using CSS (color, font-size, font-style, test-align) with HTML.</p>
+    <xmp>
+        <!DOCTYPE html> 
+
+        <html> 
+            <head> 
+                <title>Inline CSS</title> 
+            </head> 
+            
+            <body> 
+                <p style = "color:#049CA2; 
+                            font-size:50px; 
+                            font-style:bold; 
+                            text-align:center;"> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi ipsum eligendi temporibus vero nam nesciunt suscipit, optio assumenda necessitatibus rerum vitae unde iure? Impedit repellat quaerat dolore natus iure!</p> 
+            </body> 
+        </html>   
+        </xmp>
+    <h3>Output</h3>
+    <p style = "color:#049CA2; 
+                            font-size:50px; 
+                            font-style:bold; 
+                            text-align:center;"> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi ipsum eligendi temporibus vero nam nesciunt suscipit, optio assumenda necessitatibus rerum vitae unde iure? Impedit repellat quaerat dolore natus iure!</p> 
+    <h2>Internal or Embedded CSS</h2>
+    <p>It’s also a single HTML document CSS same as inline CSS. What is Single HTML documented – When a CSS and HTML code inside the same file. Internal CSS (Embedded CSS) and inline CSS both are example of it. </p>
+    <xmp>
+        <!DOCTYPE html>
+
+        <html>
+        <head>
+            <title>Internal CSS</title>
+            <style>
+            .main {
+                text-align: center;
+            }
+            .name {
+                color: #049ca2;
+                font-size: 40px;
+                font-weight: bold;
+            }
+            .learn {
+                font-style: bold;
+                font-size: 20px;
+            }
+            </style>
+        </head>
+        <body>
+            <div class="main">
+                <div class="name">CSS</div>
+                <div class="learn">Cascading Style Sheet</div>
+            </div>
+        </body>
+        </html> 
+    </xmp>
+    <h3>Output</h3>
+    <div class="main">
+        <div class="name">CSS</div>
+        <div class="learn">Cascading Style Sheet</div>
+    </div>
+    <h2>External CSS</h2>
+    <p>The last and most important External CSS, it uses a separate class and link to HTML page. The separate CSS class only contain a style property with the help of tag attributes of HTML (For Example class, id, etc).
+
+        The CSS file extension is dot CSS and you can give any name of it, for example “style.css“. To Link a Cascading Style Sheets you have to use &lt;link&gt; tag in a &lt;head&gt; tag with the file path. </p>
+    
+    <h3>Cascading Style Sheets –1_style.css</h3>
+    <xmp>
+        body {
+
+            background-color: lightgray;
+          }
+          .main {
+            text-align: center;
+          }
+          .name {
+            color: dimgray;
+            font-size: 50px;
+            font-weight: bold;
+          }
+          #learn {
+            color: #898989;
+            font-style: italic;
+            font-size: 20px;
+          }  
+    </xmp>
+    <h3>HTML file – Intoduction to CSS.html</h3>
+    <xmp>
+        <!DOCTYPE html>
+
+        <html>
+            <head>
+            <link rel="stylesheet" href="CSS Files/1_style.css"/>
+            </head>
+            <body>
+                    <div class="main1">
+                        <div class="name1">Beta-Labs</div>
+                        <div id="learn1">
+                            A Portlal for Web learner's </p>
+                        </div>
+            </body>
+        </html> 
+    </xmp>
+    <h3>Output</h3>
+    <div class="main1">
+        <div class="name1">CSS</div>
+        <div id="learn1">
+            Cascading Style Sheet </p>
+    </div>
+</body>
+</html>
