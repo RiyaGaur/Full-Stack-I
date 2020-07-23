@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            color: rgb(5, 5, 92);
+        }
+        p,li{
+            color: blue;
+        }
+        xmp{
+            color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-decoration: underline; text-align: center;">CSS Colors</h1>
+    <p>
+        CSS Color property is used to set the color of HTML elements. This property is used to set font color, background color etc.
+    </p>
+    <p>
+        Color of an element can be defined in the following ways:
+        <ul>
+            <li>Built-In Color</li>
+            <li>RGB Format</li>
+            <li>RGBA Format</li>
+            <li>Hexadecimal Notation</li>
+            <li>HSL</li>
+            <li>HSLA </li>
+        </ul>
+    </p>
+    <hr>
+    <h2>Built-In Color</h2>
+    <p>
+        These are a set of predefined colors that are used by its name. For example: red, blue, green etc.
+    </p>
+    <b>Syntax:</b><br>
+    <xmp>
+        h1 {
+            color: brown;
+        }
+    </xmp>
+    <h1 style="color: brown;">Heading</h1>
+    <hr>
+
+    <h2>RGB Format</h2>
+    <p>The RGB(Red, Green, Blue) format is used to define the color of an HTML element by specifying the R, G, B values range between 0 to 255. For example: RGB value of Red color is (255, 0, 0), Green color is (0, 255, 0), Blue color is (0, 0, 255) etc.</p>
+    <b>Syntax:</b><br>
+    <xmp>
+        h1 {
+            color: rgb(150, 0, 0);
+          }
+    </xmp>
+    <h1 style="color:rgb(150, 0, 0);">Heading</h1>
+    <hr>
+
+    <h2>RGBA Format</h2>
+    <p>The RGBA format is similar to the RGB, but the difference is RGBA contains A (Alpha) which specify the transparency of elements. The value of alpha lies between 0.0 to 1.0 where 0.0. represents fully transparent and 1.0 represents not transparent.</p>
+    <b>Syntax:</b><br>
+    <xmp>
+        h1 {
+            color: rgba(150, 0, 0, 0.5);
+          }
+    </xmp>
+    <h1 style="color:rgba(150, 0, 0, 0.5);">Heading</h1>
+    <hr>
+
+    <h2>Hexadecimal Notation</h2>
+    <p>The hexadecimal notation begins with # symbol followed by 6 characters each range from 0 to F. For example: Red #FF0000, Green #00FF00, Blue #0000FF etc</p>
+    <b>Syntax:</b><br>
+    <xmp>
+        h1 {
+            color: #960000;
+          }
+    </xmp>
+    <h1 style="color:#960000;">Heading</h1>
+    <hr>
+
+    <h2>HSL</h2>
+    <p>HSL stands for Hue, Saturation, and Lightness respectively. This format uses the cylindrical coordinate system.</p>
+    <ul>
+        <li>
+            <b>Hue:</b> Hue is the degree of the color wheel. Its value lies between 0 to 360 where 0 represents red, 120 represents green and 240 represents blue color.
+        </li>
+        <li>
+            <b>Saturation: </b> It takes percentage value, where 100% represents completely saturated, while 0% represents completely unsaturated (gray).
+        </li>
+        <li>
+            <b>Lightness: </b> It takes percentage value, where 100% represents white, while 0% represents black.
+        </li>
+    </ul>
+    <b>Syntax:</b><br>
+    <xmp>
+        h1 {
+            color: hsl(0, 100%, 29%);
+          }
+    </xmp>
+    <h1 style="color:hsl(0, 100%, 29%);">Heading</h1>
+    <hr>
+
+    <h2>HSLA</h2>
+    <p>The HSLA color property is similar to HSL property, but the difference is HSLA contains A (Alpha) which specify the transparency of elements. The value of alpha lies between 0.0 to 1.0 where 0.0. represents fully transparent and 1.0 represents not transparent.</p>
+    <b>Syntax:</b><br>
+    <xmp>
+        h1 {
+            color: hsla(0, 100%, 29%, 0.5);
+          }
+    </xmp>
+    <h1 style="color:hsla(0, 100%, 29%, 0.5);">Heading</h1>
+    <hr>
+
+
+
+
+</body>
+</html>
