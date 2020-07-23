@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
         h1{
+            padding-left: 10%;
             text-decoration: underline;
         }
         p,li{
@@ -16,136 +18,169 @@
             font-family: cursive;
         }
         h2{
-            text-align: center;
-            color: darkblue;
+            color: rgb(3, 3, 80);
+        }
+        *{
+            padding-left: 5%;
+            padding-right: 5%;
         }
     </style>
 </head>
 <body>
     <h1>CSS Selectors</h1>
-    <h2>Type Selectors</h2> 
-    <p>
-        This is the same selector we have seen above. Again, one more example to give a color to all level 1 headings −
-    </p>
-    <xmp>
+    <div>
+        <h2>Type Selectors</h2> 
+        <p>
+            This is the same selector we have seen above. Again, one more example to give a color to all level 1 headings −
+        </p>
+        <xmp>
 
-        h1 {
-            color: #36cfff;
-        }
-    </xmp>
+            h1 {
+                color: #36cfff;
+            }
+        </xmp>
 
-    <h4 style="color: brown;">Implementation: <a href="https://riyagaur.github.io/Full-Stack-I/CSS/Selectors/3.1_Type%20Selectors.html">Type Selector</a></h4>
-    
-    <h2>The Universal Selectors</h2>
-    <p>
-        Rather than selecting elements of a specific type, the universal selector quite simply matches the name of any element type −
-    </p>
-    <xmp>
-
-        * {
-            color: #000000;
-          }
-
-    </xmp>
-
-    <h4 style="color: brown;">Implementation: <a href="Selectors/3.2_Universal Selectors.html">Universal Selector</a></h4>
-
-    <h2>The Descendant Selectors</h2>
-    <p>
-        Suppose you want to apply a style rule to a particular element only when it lies inside a particular element. As given in the following example, style rule will apply to &lt;em&gt; element only when it lies inside &lt;ul&gt; tag.
-    </p>
-    <xmp>
+        <h4 style="color: brown;">Implementation: <a href="Selectors/3.1_Type Selectors.html">Type Selector</a></h4>
+        <hr>
         
-        ul em {
-            color: #000000;
-          }
+        <h2>The Universal Selectors</h2>
+        <p>
+            Rather than selecting elements of a specific type, the universal selector quite simply matches the name of any element type −
+        </p>
+        <xmp>
 
-    </xmp>
-    <h2>The Class Selectors</h2>
-    <p>
-        You can define style rules based on the class attribute of the elements. All the elements having that class will be formatted according to the defined rule.
-    </p>
-    <xmp>
-        .black {
-            color: #000000;
-          }
-    </xmp>
-    <h2>The ID Selectors</h2>
-    <p>
-        You can define style rules based on the id attribute of the elements. All the elements having that id will be formatted according to the defined rule.
-    </p>
-    <xmp>
-        #black {
-            color: #000000;
-          }
-    </xmp>
-    <h2>The Child Selectors</h2>
-    <p>
-        You have seen the descendant selectors. There is one more type of selector, which is very similar to descendants but have different functionality. Consider the following example −
-    </p>
-    <xmp>
-        body > p {
-            color: #000000;
-          }
-    </xmp>
-    <h2>The Attribute Selectors</h2>
-    <p>
-        You can also apply styles to HTML elements with particular attributes. The style rule below will match all the input elements having a type attribute with a value of text −
-    </p>
-    <xmp>
-        input[type='text'] {
-            color: #000000;
-          }
-    </xmp>
-    <p>
-        There are following rules applied to attribute selector.
-        <ul>
-            <li>p[lang] − Selects all paragraph elements with a lang attribute.</li>
+            * {
+                color: #000000;
+            }
 
-            <li>p[lang="fr"] − Selects all paragraph elements whose lang attribute has a value of exactly "fr".</li>
+        </xmp>
 
-            <li>p[lang~="fr"] − Selects all paragraph elements whose lang attribute contains the word "fr".</li>
+        <h4 style="color: brown;">Implementation: <a href="Selectors/3.2_Universal Selectors.html">Universal Selector</a></h4>
+        <hr>
 
-            <li>p[lang|="en"] − Selects all paragraph elements whose lang attribute contains values that are exactly "en", or begin with "en-".</li>
-        </ul>
-    </p>
-    <h2>Multiple Style Rules</h2>
-    <p>
-        You may need to define multiple style rules for a single element. You can define these rules to combine multiple properties and corresponding values into a single block as defined in the following example −
-    </p>
-    <xmp>
-        h1 {
-            color: #36c;
-            font-weight: normal;
-            letter-spacing: 0.4em;
-            margin-bottom: 1em;
-            text-transform: lowercase;
-          }
-    </xmp>
-    <h2>Grouping Selectors</h2>
-    <p>
-        You can apply a style to many selectors if you like. Just separate the selectors with a comma, as given in the following example −
-    </p>
-    <xmp>
-        h1, h2, h3 {
-            color: #36C;
-            font-weight: normal;
-            letter-spacing: .4em;
-            margin-bottom: 1em;
-            text-transform: lowercase;
-         } 
-    </xmp>
-    <p>
-        You can combine the various id selectors together as shown below −
-    </p>
-    <xmp>
-        #content,
-        #footer,
-        #supplement {
-            position: absolute;
-            left: 510px;
-            width: 200px;
-        } 
-    </xmp>
+        <h2>The Descendant Selectors</h2>
+        <p>
+            Suppose you want to apply a style rule to a particular element only when it lies inside a particular element. As given in the following example, style rule will apply to &lt;em&gt; element only when it lies inside &lt;ul&gt; tag.
+        </p>
+        <xmp>
+            
+            ul em {
+                color: #000000;
+            }
+
+        </xmp>
+
+        <h4 style="color: brown;">Implementation: <a href="Selectors/3.3_Descendant Selectors.html">Descendant Selector</a></h4>
+        <hr>
+
+        <h2>The Class Selectors</h2>
+        <p>
+            You can define style rules based on the class attribute of the elements. All the elements having that class will be formatted according to the defined rule.
+        </p>
+        <xmp>
+            .black {
+                color: #000000;
+            }
+        </xmp>
+
+        <h4 style="color: brown;">Implementation: <a href="Selectors/3.4_Class Selectors.html">Class Selector</a></h4>
+        <hr>
+
+        <h2>The ID Selectors</h2>
+        <p>
+            You can define style rules based on the id attribute of the elements. All the elements having that id will be formatted according to the defined rule.
+        </p>
+        <xmp>
+            #black {
+                color: #000000;
+            }
+        </xmp>
+
+        <h4 style="color: brown;">Implementation: <a href="Selectors/3.5_Id Selectors.html">Id Selector</a></h4>
+        <hr>
+
+        <h2>The Child Selectors</h2>
+        <p>
+            You have seen the descendant selectors. There is one more type of selector, which is very similar to descendants but have different functionality. Consider the following example −
+        </p>
+        <xmp>
+            body > p {
+                color: #000000;
+            }
+        </xmp>
+
+        <h4 style="color: brown;">Implementation: <a href="Selectors/3.6_Child Selectors.html">Child Selector</a></h4>
+        <hr>
+
+        <h2>The Attribute Selectors</h2>
+        <p>
+            You can also apply styles to HTML elements with particular attributes. The style rule below will match all the input elements having a type attribute with a value of text −
+        </p>
+        <xmp>
+            input[type='text'] {
+                color: #000000;
+            }
+        </xmp>
+        <p>
+            There are following rules applied to attribute selector.
+            <ul>
+                <li>p[lang] − Selects all paragraph elements with a lang attribute.</li>
+
+                <li>p[lang="fr"] − Selects all paragraph elements whose lang attribute has a value of exactly "fr".</li>
+
+                <li>p[lang~="fr"] − Selects all paragraph elements whose lang attribute contains the word "fr".</li>
+
+                <li>p[lang|="en"] − Selects all paragraph elements whose lang attribute contains values that are exactly "en", or begin with "en-".</li>
+            </ul>
+        </p>
+
+        <h4 style="color: brown;">Implementation: <a href="Selectors/3.7_Attribute Selectors.html">Attribute Selector</a></h4>
+        <hr>
+
+        <h2>Multiple Style Rules</h2>
+        <p>
+            You may need to define multiple style rules for a single element. You can define these rules to combine multiple properties and corresponding values into a single block as defined in the following example −
+        </p>
+        <xmp>
+            h1 {
+                color: #36c;
+                font-weight: normal;
+                letter-spacing: 0.4em;
+                margin-bottom: 1em;
+                text-transform: lowercase;
+            }
+        </xmp>
+
+        <h4 style="color: brown;">Implementation: <a href="Selectors/3.8_Multiple Style Rules.html">Multiple Style Rules</a></h4>
+        <hr>
+
+        <h2>Grouping Selectors</h2>
+        <p>
+            You can apply a style to many selectors if you like. Just separate the selectors with a comma, as given in the following example −
+        </p>
+        <xmp>
+            h1, h2, h3 {
+                color: #36C;
+                font-weight: normal;
+                letter-spacing: .4em;
+                margin-bottom: 1em;
+                text-transform: lowercase;
+            } 
+        </xmp>
+        <p>
+            You can combine the various id selectors together as shown below −
+        </p>
+        <xmp>
+            #content,
+            #footer,
+            #supplement {
+                position: absolute;
+                left: 510px;
+                width: 200px;
+            } 
+        </xmp>
+        <h4 style="color: brown;">Implementation: <a href="Selectors/3.9_Grouping Selectors.html">Grouping Selector</a></h4>
+        <hr>
+    </div>
 </body>
 </html>
