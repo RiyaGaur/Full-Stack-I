@@ -5,3 +5,6 @@
 <h2>CSS</h2>
 
 <h4><a href="https://riyagaur.github.io/Full-Stack-I/CSS/3_CSS%20Selectors.html" target="_blank">CSS Selectors</a></h4>
+
+<h4><a href="https://riyagaur.github.io/Full-Stack-I/CSS/6_CSS Width and Height.html" target="_blank">CSS Width And Height</a></h4>
+
