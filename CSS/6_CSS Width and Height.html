@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Width And Height</title>
+    <style>
+        
+        h1,h2{
+        
+            text-decoration: underline;
+        }
+        p,li{
+            color: blue;
+        }
+        xmp{
+            color: hotpink;
+            font-family: cursive;
+        }
+        b{
+            color: black;
+        }
+        *{
+            background-color: rgb(199, 192, 192);
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Width And Height</h1>
+    <p>
+        The width and height property defines the width and height of the content area of an element.
+        This width and height does not include paddings, borders, or margins. See the CSS box model to know how the effective width and height of an element's box is calculated.
+    </p>
+    
+    <h3>Implementation: <a href="Width And Height/Width And Height.html">Width And Height</a></h3>
+    <xmp>
+        
+            div {
+              width: 200px;
+              height: 100px;
+              background-color: gold;
+            }
+         
+    </xmp>
+    <p>
+        The Implemented style rules assign a fixed width of 200 pixels and height of 100px to the &lt;div&gt; element.
+        <br>
+        The width and height properties can take the following values:
+        <ul>
+            <li><b>length -</b> specifies a width in px, em, rem, pt, cm, etc.</li>
+            <li><b>% -</b> specifies a width in percentage (%) of the width of the containing element.</li>
+            <li><b>auto -</b> the browser calculates a suitable width for the element.</li>
+            <li><b>initial -</b> Sets the width and height to its default value, which is auto.</li>
+            <li><b>inherit -</b> specifies that the width should be inherited from the parent element.</li>
+        </ul>
+
+        <h3 style="color: red;">You can not specify negative values to the width and height properties.</h3>
+    </p>
+    <h1>CSS Maximum Width and Height</h1>
+    <p>
+        You can use the max-width and max-height property to specify the maximum width and height of the content area. This maximum width and height does not include paddings, borders, or margins.
+    </p>
+    <xmp>
+        div {
+            width: 200px;
+            max-width: 150px;
+            height: 75px;
+            background-color: gold;
+          }
+    </xmp>
+    <h3>Implementation: <a href="Width And Height/Maximum Width And Height.html">Maximum Width And Height</a></h3>
+    <h1>CSS Minimum Width and Height</h1>
+    <p>
+        You can use the min-width and min-height property specify the minimum width and height of the content area. This minimum width and height does not include paddings, borders, or margins. 
+    </p>
+    <xmp>
+        div {
+            width: 200px;
+            height: 100px;
+            min-width: 300px;
+            min-height: 200px;
+            background-color: gold;
+          }
+    </xmp>
+    <h3>Implementation: <a href="Width And Height/Minimum Width And Height.html">Minimum Width And Height</a></h3>
+    <hr>
+    <h2>All CSS Dimension Properties</h2>
+    <p>
+        <b>height:</b>Sets the height of an element <br>
+
+        <b>max-height:</b>Sets the maximum height of an element <br>
+
+        <b>max-width:</b>Sets the maximum width of an element <br>
+
+        <b>min-height:</b>Sets the minimum height of an element <br>
+
+        <b>min-width:</b>Sets the minimum width of an element <br>
+
+        <b>width:</b>Sets the width of an element <br>
+    </p>
+</body>
+</html>
