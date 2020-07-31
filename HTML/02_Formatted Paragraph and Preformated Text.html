@@ -4,65 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatted Paragraphs And Preformatted text</title>
+    <style>
+      *{
+          padding-left: 5%;
+          padding-right: 5%;
+          background-color: rgb(199, 192, 192);
+      }
+      h1{
+          text-align: center;
+      }
+      h2{
+          color: rgb(5, 5, 92);
+      }
+      p,li{
+          color: blue;
+      }
+      xmp{
+            color: hotpink;
+            font-family: cursive;
+      }
+      pre{
+        color: green;
+      }
+  </style>
 </head>
 <body>
-    <h1 style="color: darkgreen;">Formatted Paragraph</h1>
-    <h3 style="color:blue;">Code:</h3>
+    <h1>Formatted Paragraph</h1>
+    <p>
+      The paragraph tag p is used, quite simply, to mark up paragraphs of text.The p element is one of the most commonly used building blocks of HTML. When you use the p element to begin a new paragraph in HTML, it automatically creates a line space above and below the content.
+    </p>
+
     <xmp>
-        <p style="color: chocolate;">The p element is one of the most commonly used building blocks of HTML.               Hello!                
-           When you use the p element to begin a new paragraph in HTML, it automatically
-           creates a line space above and below the content.</p>
-
-
-        <p>This element may contain any text content, but it can’t include any block-level elements: 
-            only inline or phrase elements can be included. The P element has an attribute called align 
-            that will center the content inside the two paragraphs.</p>
-    </xmp>
-    <h3 style="color: plum;">Output:</h3>
-    <p style="color: chocolate;">The p element is one of the most commonly used building blocks of HTML.              Hello!                
-        When you use the p element to begin a new paragraph in HTML, it automatically
-        creates a line space above and below the content.</p>
-
-        
-     <p>This element may contain any text content, but it can’t include any block-level elements: 
-         only inline or phrase elements can be included. The P element has an attribute called align 
-         that will center the content inside the two paragraphs.</p>
-
-    <h1 style="color: darkgreen;">Preformatted Text</h1>
-    <h3 style="color: blue;">Code:</h3>
-    <xmp>
-        <pre style="font-family: cursive; color: blue;">The pre tags can be used to surround text that shouldn’t be                      formatted by the browser. The text enclosed within the pre tags retains all spacing and returns, and doesn’t reflow when the browser is resized. Scroll bars and horizontal scrolling are required if the lines are longer than the width of the window. The browser generally renders the preformatted text in a monospaced font, usually Courier. Some text formatting, such as bold, italics, or links, can be used within the pre tags.</PRE>
-
-        <pre>The pre element in this example displays as shown in below.            The second part of the figure shows the same content marked up as a paragraph (p) element for comparison.</pre>
-    </xmp>
-    <h3 style="color: plum;">Output:</h3>
-    <pre style="font-family: cursive; color: blue ;">The pre tags can be used to surround text that shouldn’t be                      formatted by the browser. The text enclosed within the pre tags retains all spacing and returns, and doesn’t reflow when the browser is resized. Scroll bars and horizontal scrolling are required if the lines are longer than the width of the window. The browser generally renders the preformatted text in a monospaced font, usually Courier. Some text formatting, such as bold, italics, or links, can be used within the pre tags.</PRE>
-
-    <pre>The pre element in this example displays as shown in below.              The second part of the figure shows the same content marked up as a paragraph (p) element for comparison.</pre>
-    <h1 style="color: darkgreen;">Align Attribute</h1>
-    <h3 style="color:blue;">Code:</h3>
-    <xmp>
-        <p>
-            This is the first paragraph in the example about the P tag. There really
-            isn't much to say here.
-          </p>
-          <p align="center">
-            This is the second paragraph. Again, more of the same. This time the
-            paragraph is aligned in the center. This might not be such a good idea as
-            it makes the text hard to read.
-          </p>
-          <p align="right">
-            Here the paragraph is aligned to the right. Right-aligned text is also
-            troublesome to read. The rest of the text of this paragraph is of little
-            importance.
-          </p>
-          <p align="justify">
-            Under HTML 4.0-compliant browsers, you are able to justify text. As you
-            may notice, the way browsers tend to justify text is sometimes imprecise.
-            Furthermore, not all browsers support this attribute value.
-          </p>
-    </xmp>
-    <h3 style="color: plum;">Output:</h3>
       <p>
         This is the first paragraph in the example about the P tag. There really
         isn't much to say here.
@@ -81,7 +53,63 @@
         Under HTML 4.0-compliant browsers, you are able to justify text. As you
         may notice, the way browsers tend to justify text is sometimes imprecise.
         Furthermore, not all browsers support this attribute value.
-          
       </p>
+  
+    </xmp>
+
+    <p style="color:green">
+      This is the first paragraph in the example about the P tag. There really
+      isn't much to say here.
+    </p>
+    <p align="center" style="color: green;">
+      This is the second paragraph. Again, more of the same. This time the
+      paragraph is aligned in the center. This might not be such a good idea as
+      it makes the text hard to read.
+    </p>
+    <p align="right" style="color: green;">
+      Here the paragraph is aligned to the right. Right-aligned text is also
+      troublesome to read. The rest of the text of this paragraph is of little
+      importance.
+    </p>
+    <p align="justify" style="color: green;">
+      Under HTML 4.0-compliant browsers, you are able to justify text. As you
+      may notice, the way browsers tend to justify text is sometimes imprecise.
+      Furthermore, not all browsers support this attribute value.
+    </p>
+
+    <hr>
+    
+    <h1>Preformatted Paragraph</h1>
+    <p>
+      The &lt;PRE&gt; and </PRE> tags can be used to surround text that shouldn’t be formatted by the browser. The text enclosed within the &lt;PRE&gt; tags retains all spacing and returns, and doesn’t reflow when the browser is resized. Scroll bars and horizontal scrolling are required if the lines are longer than the width of the window. The browser generally renders the preformatted text in a monospaced font, usually Courier. Some text formatting, such as bold, italics, or links, can be used within the &lt;PRE&gt; tags.
+    </p>
+    <xmp>
+        <pre> 
+          This is            an            example of 
+                text with a        lot of
+                                  curious
+                                  white space. 
+        </pre>  
+        <p>
+          This is             a            example of 
+                text with a         lot of
+                                    curious
+                                    white space. 
+        </p>
+    </xmp>
+    <pre> 
+      This is            an            example of 
+            text with a        lot of
+                              curious
+                              white space. 
+    </pre>  
+    <p style="color: green;">
+      This is             a            example of 
+            text with a         lot of
+                                curious
+                                white space. 
+    </p>
+    
+    
 </body>
 </html>
