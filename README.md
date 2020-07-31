@@ -2,7 +2,7 @@
 <h4> View my practicals live on <a href="https://riyagaur.github.io/Full-Stack-I/Practical/Index.html" target="_blank">https://riyagaur.github.io/Full-Stack-I/Practical/Index.html</a></h4>
 
 <h2>HTML</h2>
-<h4><a href="https://riyagaur.github.io/Full-Stack-I/HTML/01_Fist%Web%Page.html" target="_blank">HTML Block Elements</a></h4>
+<h4><a href="https://riyagaur.github.io/Full-Stack-I/HTML/01_First%20Web%20Page.html" target="_blank">HTML Block Elements</a></h4>
 
 <h2>CSS</h2>
 
