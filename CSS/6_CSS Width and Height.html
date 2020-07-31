@@ -100,5 +100,96 @@
 
         <b>width:</b>Sets the width of an element <br>
     </p>
+    <hr>
+    <h1>CSS Overflow</h1>
+    <p>
+        The CSS overflow property specifies how to handle the content when it overflows its block level container. We know that every single element on a page is a rectangular box and the size, positioning and behavior of these boxes are controlled via CSS.<br>
+
+        If you don't set the height of the box, it will grow as large as the content. But if you set a specific height or width of the box and the content inside cannot fit then what will happen. The CSS overflow property is used to overcome this problem. It specifies whether to clip content, render scroll bars, or just display content.
+    </p>
+    <h1>CSS Overflow property values</h1>
+    <h2>Visible</h2>
+    <p>
+        It specifies that overflow is not clipped. it renders outside the element's box. this is a default value.
+    </p>
+    <xmp>
+        div {
+            width: 200px;
+            height: 100px;
+            min-width: 300px;
+            min-height: 200px;
+            background-color: gold;
+          }
+    </xmp>
+    <h3>Implementation: <a href="Width And Height/Visible.html">Visible</a></h3>
+    <h1>Hidden</h1>
+    <p>
+        It specifies that the overflow is clipped, and rest of the content will be invisible.
+    </p>
+    <xmp>
+        div.hidden {
+            background-color: #00FF00;
+            width: 100px;
+            height: 170px;
+            overflow: hidden;
+          }
+    </xmp>
+    <h3>Implementation: <a href="Width And Height/Hidden.html">Hidden</a></h3>
+
+    <h1>Scroll</h1>
+    <p>
+        It specifies that the overflow is clipped, and a scroll bar is used to see the rest of the content.
+    </p>
+    <xmp>
+        div.scroll {
+            background-color: #00ffff;
+            width: 100px;
+            height: 100px;
+            overflow: scroll;
+          }
+    </xmp>
+    <h3>Implementation: <a href="Width And Height/Scroll.html">Scroll</a></h3>
+
+    <h1>Auto</h1>
+    <p>
+        It specifies that if overflow is clipped, a scroll bar is needed to see the rest of the content.
+    </p>
+    <xmp>
+        div.auto {
+            background-color: #00ffff;
+            width: 100px;
+            height: 100px;
+            overflow: auto;
+          }
+    </xmp>
+    <h3>Implementation: <a href="Width And Height/Auto.html">Auto</a></h3>
+    
+    <h1>Inherit</h1>
+    <p>
+        It inherits the property from its parent element.
+    </p>
+    <xmp>
+        div.inherit {
+            background-color: #00ffff;
+            width: 100px;
+            height: 100px;
+            overflow: inherit;
+          }
+    </xmp>
+    <h3>Implementation: <a href="Width And Height/Inherit.html">Inherit</a></h3>
+
+    <h1>Initial</h1>
+    <p>
+        It is used to set the property to its initial value.
+    </p>
+    <xmp>
+        div.initial {
+            background-color: #00ffff;
+            width: 100px;
+            height: 100px;
+            overflow: initial;
+          }
+    </xmp>
+    <h3>Implementation: <a href="Width And Height/Initial.html">Initial</a></h3>
 </body>
 </html>
