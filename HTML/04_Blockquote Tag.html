@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blockquote Tag</title>
+    <style>
+        *{
+          padding-left: 5%;
+          padding-right: 5%;
+          background-color: rgb(199, 192, 192);
+      }
+      h1{
+          text-align: center;
+      }
+      h2{
+          color: rgb(5, 5, 92);
+      }
+      p,li{
+          color: blue;
+      }
+      xmp{
+            color: hotpink;
+            font-family: cursive;
+      }
+    </style>
 </head>
 <body>
     <h1 style="align-content: center;">Blockquote Tag</h1>
-    <hr>
-    <h3 style="color: blue;">Code:</h3>
-    <xmp>
-        <p style="color: chocolate;">The HTML <blockquote> tag defines a long block quotation in the HTML document from another source. Browsers traditionally render the text found within the <blockquote> tag as indented text. This tag is also commonly referred to as the <blockquote> element.</p>
-    </xmp>
-    <h3 style="color: blueviolet;">Output:</h3>
-    <p style="color: chocolate;">The HTML &lt;blockquote&gt; tag defines a long block quotation in the HTML document from another source. 
-        Browsers traditionally render the text found within the &lt;blockquote&gt; tag as indented text. 
-            This tag is also commonly referred to as the &lt;blockquote&gt; element.</p>
-    <hr>
+    <p>
+        The HTML &lt;blockquote&gt; tag defines a long block quotation in the HTML document from another source. Browsers traditionally render the text found within the &lt;blockquote&gt; tag as indented text. This tag is also commonly referred to as the &lt;blockquote&gt; element.
+    </p>
+    
     <h3 style="color: blue;">Code:</h3>
     <xmp>
         <blockquote style="text-align: justify;">Browsers generally render blockquote text as indented text. If your
@@ -26,11 +40,11 @@
      text needs to display within a non-quoted paragraph, you should use the HTML q 
      tag. Most browsers surround q text with quotation marks.</q>
     </xmp>
-    <h3 style="color: blueviolet;">Output:</h3>
-    <blockquote style="text-align: justify;">Browsers generally render blockquote text as indented text. If your
+    <h3 style="color: blue;">Output:</h3>
+    <blockquote style="text-align: justify; color:green">Browsers generally render blockquote text as indented text. If your
      quoted text needs to display within a non-quoted paragraph, you should use the
      HTML q tag. Most browsers surround q text with quotation marks.</blockquote>
-     <q>Browsers generally render blockquote text as indented text. If your quoted 
+     <q style="text-align: justify; color:green">Browsers generally render blockquote text as indented text. If your quoted 
      text needs to display within a non-quoted paragraph, you should use the HTML q 
      tag. Most browsers surround q text with quotation marks.</q>
 </body>
