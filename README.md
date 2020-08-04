@@ -6,6 +6,8 @@
 <h4><a href="https://riyagaur.github.io/Full-Stack-I/HTML/02_Formatted%20Paragraph%20and%20Preformated%20Text.html" target="_blank">Formatted Paragraphs And Preformatted Text</a></h4>
 <h4><a href="https://riyagaur.github.io/Full-Stack-I/HTML/03_Headings.html" target="_blank">Headings</a></h4>
 <h4><a href="https://riyagaur.github.io/Full-Stack-I/HTML/04_Blockquote%20Tag.html" target="_blank">Blockquote Tag</a></h4>
+<h4><a href="https://riyagaur.github.io/Full-Stack-I/HTML/05_Div%20Tag.html" target="_blank">Div Tag</a></h4>
+
 <h2>CSS</h2>
 
 <h4><a href="https://riyagaur.github.io/Full-Stack-I/CSS/3_CSS%20Selectors.html" target="_blank">CSS Selectors</a></h4>
