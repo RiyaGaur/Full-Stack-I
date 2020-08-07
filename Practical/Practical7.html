@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical-7</title>
     <style>
+        body{
+            background-color: black;
+        }
         .container {
             margin: 0px auto;
             padding: 5px;
-            width: 100vw;
-        }
-        h2 {
+       }
+        h1 {
             text-align: center;
+            color: cornsilk;
         }
         #header {
             height: 90px;
-            width: 100vw;
+            width: 100%;
             background-color: gray;
             margin-bottom: 10px;
             display: flex;
@@ -23,10 +26,11 @@
             align-items: center;
             font-size: 40px;
             color: white;
+            border-radius: 15px;
         }
         #Banner {
             height: 100vh;
-            width: 100vw;
+            width: 100%;
             /* border: solid green; */
             float: right;
             background-color: lightskyblue;
@@ -36,123 +40,51 @@
             font-size: 40px;
             color: white;
             margin-bottom: 10px;
+            border-radius: 15px;
         }
-        #Section1{
-            margin-bottom: 10px;
-            display: flex;
-            flex-direction: row;
-            width: 100vw;
-            height: 300px;
-        }
-        #Section-1::after {
-            content: '';
-            display: block;
-            clear: both;
-        }
-        
-        #sa {
-            order: 1;
-            border-radius: 50%;
-            background-color: goldenrod;
-            margin-right: 25px;
-            margin-left: 25px;
-            height: 100%;
-            width:  25%;
-            display: flex;
-            
-        }
-        #sb {
-            order: 2;
-            border-radius: 50%;
-            background-color: goldenrod;
-            margin-right: 25px;
-            height: 100%;
-            width:  25%;
-            display: flex;
-        }
-        #sc {
-            order: 3;
-            border-radius: 50%;
-            background-color: goldenrod;
-            margin-right: 25px;
-            height: 100%;
-            width:  25%;
-            display: flex;
-        }
-        #sd {
-            order: 4;
-            border-radius: 50%;
-            background-color: goldenrod;
-            margin-right: 25px;
-            height: 100%;
-            width:  25%;
-            display: flex;
-        }
-
         #Section-2 {
-            margin-bottom: 10px;
-            height: 500px;
-        }
-        #Section-2 ::after {
-            content: '';
-            display: block;
-            clear: both;
-        }
-        #left-side {
-            width: 50%;
-
-            /* border: solid blue; */
+            width: 100%;
             float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        #sa {
+            width: 20%;
+            height:40vh;
+            border-radius: 50%;
+            background-color: orange;
+            float:left;
+            margin:2.5%;
+        }
+
+        #left-side {
+            width: 48%;
             height: 500px;
-            /* border: solid green; */
-            background-color: gray;
+            background-color: purple;
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 40px;
             color: white;
             margin-bottom: 10px;
+            border-radius: 15px;;
         }
         #right-side {
-            width: 49%;
-            float: right;
-            
+            width: 48%;            
+            margin:15px;
         }
-        #Article-1 {
-            width: 100%;
-            height: 160px;
-            /* float: left; */
-            background-color: indianred;
+        #Article-1 , #Article-2, #Article-3 {
+            font-size: 40px;
             margin-bottom: 10px;
+            color: white;
+            background-color: hotpink;
+            height: 160px;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 40px;
-            color: white;
-        }
-        #Article-2 {
-            width: 100%;
-            height: 160px;
-            /* float: left; */
-            background-color: indianred;
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
-            color: white;
-        }
-        #Article-3 {
-            width: 100%;
-            height: 160px;
-            /* float: left; */
-            background-color: indianred;
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
-            color: white;
+            border-radius: 13px;
         }
         #Section-3 {
             /* border: solid red; */
@@ -160,46 +92,27 @@
             display: flex;
             flex-direction: row;
         }
-        #Section-3 ::after {
-            content: '';
-            display: block;
-            clear: both;
-        }
-        #Box-1 {
-            height: 400px;
+        
+        #Box {
+            height: 350px;
             width: 24%;
-            background-color: orangered;
+            background-color: lightcoral;
             margin-left: 25px;
             margin-right: 25px;
+            border-radius: 15px;
         }
-        #Box-2 {
-            height: 400px;
-            width: 24%;
-            background-color: orangered;
-            margin-right: 25px;
-        }
-        #Box-3 {
-            height: 400px;
-            width: 24%;
-            background-color: orangered;
-            margin-right: 25px;
-        }
-        #Box-4 {
-            height: 400px;
-            width: 24%;
-            background-color: orangered;
-            margin-right: 25px;
-        }
+        
         #footer {
             width: 100%;
-            background-color: rgb(207, 163, 248);
+            background-color: gray;
             height: 90px;
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 40px;
             color: white;
-            }
+            border-radius: 15px;
+        }
     </style>
 </head>
 <body>
@@ -207,15 +120,15 @@
         <div id="header">Header</div>
         <div id="Banner">Banner</div>
         
-        <h2>Section-1</h2>
+        <h1>Section-1</h1>
         <div id="Section1">
             <div id="sa"></div>
-            <div id="sb"></div>
-            <div id="sc"></div>
-            <div id="sd"></div>
+            <div id="sa"></div>
+            <div id="sa"></div>
+            <div id="sa"></div>
         </div>
         
-        <h2>Section-2</h2>
+        <h1>Section-2</h1>
         <div id="Section-2">
             <div id="left-side">Main Content</div>
             <div id="right-side">
@@ -224,15 +137,15 @@
                 <div id="Article-3">Article-3</div>
             </div>
         </div>
-        <h2>Section-3</h2>
+        <h1>Section-3</h1>
         <div id="Section-3">
-            <div id="Box-1"></div>
-            <div id="Box-2"></div>
-            <div id="Box-3"></div>
-            <div id="Box-4"></div>
+            <div id="Box"></div>
+            <div id="Box"></div>
+            <div id="Box"></div>
+            <div id="Box"></div>
         </div>
         
-        <h2>Section-4</h2>
+        <h1>Section-4</h1>
         <div id="footer">Footer</div>
     </div>
 </body>
