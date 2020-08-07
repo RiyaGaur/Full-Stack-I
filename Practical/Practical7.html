@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-7</title>
+    <style>
+        .container {
+            margin: 0px auto;
+            padding: 5px;
+            width: 100vw;
+        }
+        h2 {
+            text-align: center;
+        }
+        #header {
+            height: 90px;
+            width: 100vw;
+            background-color: gray;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+        }
+        #Banner {
+            height: 100vh;
+            width: 100vw;
+            /* border: solid green; */
+            float: right;
+            background-color: lightskyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        #Section1{
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            height: 300px;
+        }
+        #Section-1::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        #sa {
+            order: 1;
+            border-radius: 50%;
+            background-color: goldenrod;
+            margin-right: 25px;
+            margin-left: 25px;
+            height: 100%;
+            width:  25%;
+            display: flex;
+            
+        }
+        #sb {
+            order: 2;
+            border-radius: 50%;
+            background-color: goldenrod;
+            margin-right: 25px;
+            height: 100%;
+            width:  25%;
+            display: flex;
+        }
+        #sc {
+            order: 3;
+            border-radius: 50%;
+            background-color: goldenrod;
+            margin-right: 25px;
+            height: 100%;
+            width:  25%;
+            display: flex;
+        }
+        #sd {
+            order: 4;
+            border-radius: 50%;
+            background-color: goldenrod;
+            margin-right: 25px;
+            height: 100%;
+            width:  25%;
+            display: flex;
+        }
+
+        #Section-2 {
+            margin-bottom: 10px;
+            height: 500px;
+        }
+        #Section-2 ::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #left-side {
+            width: 50%;
+
+            /* border: solid blue; */
+            float: left;
+            height: 500px;
+            /* border: solid green; */
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        #right-side {
+            width: 49%;
+            float: right;
+            
+        }
+        #Artical-1 {
+            width: 100%;
+            height: 160px;
+            /* float: left; */
+            background-color: orangered;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+        }
+        #Artical-2 {
+            width: 100%;
+            height: 160px;
+            /* float: left; */
+            background-color: orangered;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+        }
+        #Artical-3 {
+            width: 100%;
+            height: 160px;
+            /* float: left; */
+            background-color: orangered;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+        }
+        #Section-3 {
+            /* border: solid red; */
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+        #Section-3 ::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #Box-1 {
+            height: 400px;
+            width: 24%;
+            background-color: orangered;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        #Box-2 {
+            height: 400px;
+            width: 24%;
+            background-color: orangered;
+            margin-right: 25px;
+        }
+        #Box-3 {
+            height: 400px;
+            width: 24%;
+            background-color: orangered;
+            margin-right: 25px;
+        }
+        #Box-4 {
+            height: 400px;
+            width: 24%;
+            background-color: orangered;
+            margin-right: 25px;
+        }
+        #footer {
+            width: 100%;
+            background-color: rgb(207, 163, 248);
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: white;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header">Header</div>
+        <div id="Banner">Banner</div>
+        
+        <h2>Section-1</h2>
+        <div id="Section1">
+            <div id="sa"></div>
+            <div id="sb"></div>
+            <div id="sc"></div>
+            <div id="sd"></div>
+        </div>
+        
+        <h2>Section-2</h2>
+        <div id="Section-2">
+            <div id="left-side">Main Content</div>
+            <div id="right-side">
+                <div id="Artical-1">Artical-1</div>
+                <div id="Artical-2">Artical-2</div>
+                <div id="Artical-3">Artical-3</div>
+            </div>
+        </div>
+        <h2>Section-3</h2>
+        <div id="Section-3">
+            <div id="Box-1"></div>
+            <div id="Box-2"></div>
+            <div id="Box-3"></div>
+            <div id="Box-4"></div>
+        </div>
+        
+        <h2>Section-4</h2>
+        <div id="footer">Footer</div>
+    </div>
+</body>
+</html>
