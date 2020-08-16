@@ -6,10 +6,21 @@
     <title>Practical-8</title>
 
     <style>
-        #container{
-            width: 100%;
-            padding: 15px;
-            margin: 0px auto;
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .container {
+            width: 1200px;
+            padding: 0 0px;
+            font-size: 30px;
+            margin: auto;
+            
         }
         h4{
             margin-top: 80px;
@@ -20,42 +31,44 @@
 
 
         ul li{
+            float: left;
             padding: 60px;
+            margin: 0%;
             list-style-type: none;
             display: inline-block;
         }
 
         #header{
-              background-color: grey;
-              height: 60px;
-              width: 100%;
-              display: flex;
-              justify-content: space-around;
-              align-items: center;
-              font-size: 25px;
-              font-family: Arial, Helvetica, sans-serif;
-              margin-bottom: 15px;
-              top: 0;
-              position: fixed;
+            background-color: grey;
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0;
+            position: fixed;
+            overflow: hidden;
           }
 
         #banner{
-            margin-top: 70px;
             color: white;
             background-image: url("Practical8 Docs/emile-perron-xrVDYZRGdw4-unsplash.jpg");
-            background-size: 100% 100vh;
-            height: 100vh;
-            width: 100%;
+            background-size: 100%;
+            height: 700px;
             display: flex;
-            justify-content: left;
             font-size: 45px;
             font-family: Arial, Helvetica, sans-serif;
+            border-radius: 15px;
+            padding-left: 10px;
+            margin-top: 100px;
+            margin-right: 3px;
         }
 
 
         .circle{
-            width: 260px;
-            height: 260px;
+            width: 230px;
+            height: 230px;
             float: left;
             padding: 18px;
             border-radius: 50%;
@@ -69,7 +82,7 @@
         }  
         ul li a{
                text-decoration: none;
-               color: black;
+               color: white;
            }
 
         ul li a:hover{
@@ -78,9 +91,8 @@
         }
 
         #left-part{
-            width: 50%;
+            width: 730px;
             height: 550px;
-            margin-left: 30px;
             margin-right: 30px;
             margin-bottom: 15px;
             background-color: gray;
@@ -103,7 +115,7 @@
 
         .articals{
             display: flex;
-            width: 45%;
+            width: 436px;
             height: 163px;
             justify-content: center;
             margin-bottom: 30px;
@@ -132,26 +144,28 @@
 
 
         .box{
-    		width:20%;
-			min-width: 240px;
+    		width: 20%;
     		float:left;
-    		margin:20px 18px;
+    		margin-top:70px;
     		background-color: lightgray;
     		padding: 15px;
     		border-radius: 8px;
     		box-shadow: 0.5px 5px rgba(0,0,0,0.15);
             font-family: Arial, Helvetica, sans-serif;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 70px;
     	}
     	.box img{
             height:150px;
             width:100%; 
     		border-radius: 8px;
-            
+            margin-bottom: 10px;
     	}
-        .box h4{
+        .box h6{
             text-align: center;
-            margin: 2px 1px;
-            font-size: 20px;
+            margin: 0px 10px;
+            font-size: 17px;
         }
         .box a{
 			display: block;
@@ -168,23 +182,29 @@
             background-color: blue;
         }
 		.box p{
-            overflow:initial;
+            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            margin-right: 10px;
+            margin-left: 10px;
+            padding: 10 px;
+            word-spacing: 8px;
+            line-height: 20px;
         }
 
         #contact{
-            margin-top:35px;
+            margin-top:70px;
         }
         .footer{
-            width: 100%;
-            height: 9vh;
+            height: 30px;
             background-color: lightgreen;
             display: flex;
             justify-content: center;
-            /* align-items: center; */
             font-size: 20px;
             padding: 20px;
             font-family: Arial, Helvetica, sans-serif;
-            margin-bottom: 0px;
+            margin-top:70px;
+            
         }
 
         #backtotop{
@@ -274,15 +294,15 @@
         <h4 id="technologies">TECHNOLOGIES USED</h4>
         <div class="box">
             <img src="Practical5 Docs/introductiontohtml.jpg">
-            <h4>Introduction to HTML</h4>
+            <h6>Introduction to HTML</h6>
             <p>
-                Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+                Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JS.
             </p>
             <a href="Practical5 Docs/Html.html">Read More</a>
         </div>
         <div class="box">
             <img src="Practical5 Docs/Introductiontocss.jpg">
-            <h4>Introduction to CSS</h4>
+            <h6>Introduction to CSS</h6>
             <p>
                 Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable. CSS handles the look and feel part of a web page. Using CSS, you can control the color of the
             </p>
@@ -290,7 +310,7 @@
         </div>
         <div class="box">
             <img src="Practical5 Docs/introductiontojavascript.png">
-            <h4>Introduction to JavaScript</h4>
+            <h6>Introduction to JavaScript</h6>
             <p>
                 JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.). There are also more advanced server side versions of JavaScript 
             </p>
@@ -298,7 +318,7 @@
         </div>
         <div class="box">
             <img src="Practical5 Docs/introductiontobootstrap.jpg">
-            <h4>Introduction to JavaScript</h4>
+            <h6>Introduction to JavaScript</h6>
             <p>
                 Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other 
             </p>
