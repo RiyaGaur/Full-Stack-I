@@ -8,6 +8,7 @@
 <h4><a href="https://riyagaur.github.io/Full-Stack-I/HTML/04_Blockquote%20Tag.html" target="_blank">Blockquote Tag</a></h4>
 <h4><a href="https://riyagaur.github.io/Full-Stack-I/HTML/05_Div%20Tag.html" target="_blank">Div Tag</a></h4>
 <h4><a href="https://riyagaur.github.io/Full-Stack-I/HTML/06_Hr%20and%20Br.html" target="_blank">Horizontal Rule And Break</a></h4>
+<h4><a href="https://riyagaur.github.io/Full-Stack-I/HTML/07_Inline%20Tags.html" target="_blank">Inline Tags</a></h4>
 
 <h2>CSS</h2>
 
