@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            width: 100%;
+            height: 70px;
+            background-color: grey;
+            padding: 0 20px;
+        }
+        .header h2{
+            line-height: 70px;
+            float: left;
+            text-transform: uppercase;
+            color: white;
+        }
+        .header .menu{
+            list-style: none;
+            float: right;
+        }
+        .menu li{
+            display: inline;
+            line-height: 70px;
+        }
+        .menu li a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 0px 20px;
+        }
+        .menu li a:hover, .show-btn:hover,.hide-btn:hover{
+            color: brown;
+        }
+        .show-btn,.hide-btn{
+            font-size: 30px;
+            color: white;
+            line-height: 70px;
+            transition:4s;
+            display: none;
+        }
+        .show-btn{
+            float: right;
+        }
+        #chk{
+            position: absolute;
+            visibility: hidden;
+            z-index: -10;
+        }
+        @media(max-width: 800px){
+            .show-btn, .hide-btn{
+                display: block;
+            }
+            .menu{
+                position: fixed;
+                top:0;
+                /* Slider effect */
+                right: -100%; 
+                width: 100%;
+                height: 100vh;
+                background-color: #333;
+                text-align: center;
+                padding: 80px 0;
+                transition: .7s;
+                line-height: normal;
+            }
+            #chk:checked ~ .menu{
+                right: 0;
+            }
+            .menu li{
+                display: block;
+            }
+            .menu li a{
+                display: block;    
+            }
+            .hide-btn{
+                position: absolute;
+                right: 20px;
+                top: 10px;
+            }
+        }
+        .content{
+            padding: 20px;
+        }
+        .content img{
+            width: 100%;
+            max-width: 700px;
+            display: block;
+            margin:auto;
+            margin-bottom:20px;
+        }
+        .content p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Riya-Gaur</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-btn">
+            <i class="fa fa-bars" ></i>
+        </label>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <label for="chk" class="hide-btn">
+            <i class="fa fa-times" ></i>
+        </label>
+    </div>
+    <div class="content">
+        <img src="Images/Dog.jpg" alt="">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, recusandae adipisci porro nobis officiis possimus culpa voluptatem obcaecati id deserunt doloribus commodi tempora ipsam. Repellat repudiandae, consequatur maiores itaque, sapiente maxime nobis quod enim ipsam ullam, alias eius non iusto omnis rem adipisci molestiae commodi illum dolores expedita. Similique, eos enim illo dolor eaque doloremque adipisci molestiae nobis aperiam ea, at ratione cumque. Velit laborum maxime deleniti unde, ex at excepturi placeat consequatur ipsum ipsam? Facilis earum nulla corporis error id ratione placeat assumenda doloremque, molestiae beatae perspiciatis voluptas, minus repellat sint a, enim architecto. Blanditiis dolore itaque illo cupiditate! Vel rem iste enim iure ducimus soluta optio dignissimos eos, harum doloribus adipisci nesciunt a. Illum deleniti praesentium et architecto laudantium odio saepe dolorem iusto sint totam doloremque aspernatur assumenda, atque quod! Culpa tempore voluptas mollitia vitae omnis vero in ab architecto doloremque natus. In maxime corporis ullam soluta voluptatibus aperiam eum sit esse ratione dolores error tempora ea nobis nemo maiores cum delectus, eligendi omnis harum vero minima, nesciunt illum fuga! Vitae veritatis amet neque enim facere magnam officia soluta! Fuga est perspiciatis aliquid sit eos necessitatibus assumenda corrupti voluptates omnis quam mollitia architecto maiores beatae qui voluptatum enim blanditiis nobis, velit ducimus incidunt illo ut odit. Possimus, officiis iure! Nesciunt neque voluptatibus harum voluptas praesentium pariatur vel consequuntur perspiciatis error animi, inventore natus, dolorum facere ipsam libero consectetur sit magnam numquam, optio incidunt eveniet nostrum. Ex sunt, minima dolores rem ipsam consectetur dicta earum autem dolor iure nihil perferendis laboriosam veniam et tempora reprehenderit labore aliquam laudantium? Nulla, optio, laboriosam ullam voluptates eum ab dolor corporis est blanditiis sequi voluptatibus quo iure aliquid adipisci deserunt excepturi atque! Dolorum nisi, quibusdam suscipit sequi impedit velit, optio consequatur voluptate magni fugiat aut veniam aspernatur, eveniet iure ipsum laboriosam obcaecati officia exercitationem. Voluptate, esse iste? Reiciendis aut nulla quo iusto officia repellat. Iste totam repellendus repudiandae veniam eius, beatae adipisci. Itaque quae dolorum quo voluptates quaerat commodi perferendis incidunt provident. Assumenda recusandae veniam dolores inventore officia quidem amet nesciunt ipsum. Fuga, qui dicta molestiae perspiciatis voluptates earum rerum animi doloremque labore sint rem consectetur quod doloribus, quas maiores pariatur iusto totam sit reiciendis sunt! Asperiores quaerat possimus quod impedit tempore. Voluptatum nisi repellendus voluptates ea reprehenderit. Culpa officiis deleniti labore, similique, perspiciatis at asperiores nihil provident, laudantium omnis impedit inventore optio quis sunt quae praesentium explicabo? Maxime mollitia pariatur eveniet saepe, nesciunt neque. Corporis, iure laboriosam voluptatum atque aperiam deleniti vel quasi unde ipsa laudantium dolor sint quaerat facilis eius! Excepturi esse aspernatur dolor quis in quidem consequuntur non adipisci minus iste eaque quod molestiae saepe architecto, placeat iure nisi voluptas rem doloremque eligendi. Nostrum eius saepe debitis veritatis aliquam atque! Aliquam dicta sequi, ullam necessitatibus illum aperiam ut dolor voluptate fugiat culpa repellat adipisci natus possimus similique excepturi! Non culpa molestiae error sapiente dolores dolor quibusdam fugit quam veritatis perferendis. Sit ea quo eligendi soluta labore quod deserunt, rem dolorem deleniti, corporis incidunt dolores eos fugiat consequuntur? Velit, ullam doloremque.
+        </p>
+    </div>
+</body>
+</html>
