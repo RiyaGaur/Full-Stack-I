@@ -17,6 +17,24 @@
         a:visited {
             color: lightseagreen;
         }
+        *{
+            padding-left: 5%;
+            padding-right: 5%;
+            background-color: rgb(199, 192, 192);
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            color: rgb(5, 5, 92);
+        }
+        p,li{
+            color: blue;
+        }
+        xmp{
+                color: hotpink;
+                font-family: cursive;
+        }
     </style>
 </head>
 <body>
@@ -53,8 +71,8 @@
     </p>
     <h1>Internal Linking </h1>
 
-    <p style="color: blue;"><strong> Path for Links:</strong> It is not required to give a complete URL for every link. You can get rid of it if you will use &lt;base&gt; tag in your header. This tag is used to give a base path for all the links. So your browser will concatenate given relative path to this base path and will make a complete URL.</p>
-    Two basic types of links exist. 
+    <p style="color: blue;"><strong> Path for Links:</strong> It is not required to give a complete URL for every link. You can get rid of it if you will use &lt;base&gt; tag in your header. This tag is used to give a base path for all the links. So your browser will concatenate given relative path to this base path and will make a complete URL.
+    Two basic types of links exist. </p>
     <ul>
         <li>Absolute</li>
         <li>Relative </li>
@@ -94,21 +112,21 @@
     <h1>Create an Anchor</h1>
 
     <p style="color: blue;">An anchor is a place within a page that is given a special name, enabling you to link to it later. Without first naming a section, you cannot link to it.</p>
-    Example:
+    <p>Example:</p>
     <xmp>
         <a name="section1"><b>Section 1</b></a>
     </xmp>
     <h1>Link to an Anchor </h1>
 
     <p style="color: blue;">To create the link to an anchor, you also use the a tag and the href attribute, as you would when creating any other type of link. To finish the link, you need to include a hash symbol (#) and the anchor name as the value of the href attribute.</p>
-    Example:
+    <p>Example:</p>
     <xmp>
         <a href="https://www.google.com/" >Google</a> 
     </xmp>
     <h1>Links to E-mail Addresses</h1> 
 
     <p style="color: blue;"> When you want to give someone easy access to your e-mail address, you can include it on your page as a mailto link. This means instead of using http:// in front of your links, you use mailto: to preface youre-mail addresses. </p>
-    Example:
+    <p>Example:</p>
     <xmp>
         <a href="mailto:riyagaur15@gmail.com" >Mail Me</a>
     </xmp>
@@ -116,7 +134,7 @@
     <h1>Target Windows</h1>
 
     <p style="color: blue;">Have you ever visited a Web site and noticed that a second instance of the Web browser opened when you clicked a link? This happens when Web developers use the target attribute to load links in a browser window other than the one you are currently using.</p>
-    Example:
+    <p>Example:</p>
     <h3>For the same Window:</h3>
     <xmp>
         <a title="Google Link" href="https://www.google.com/" target="_self">Google</a>
