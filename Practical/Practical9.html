@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Practical-9</title>
+
+    <style>
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            scroll-padding-top: 70px;
+            scroll-behavior: smooth;
+        }
+
+        #container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        #header {
+            background-color: grey;
+            width: 100%;
+            height: 70px;
+            max-width: 1200px;
+            position: fixed;
+            top: 0;
+            height: 70px;
+        }
+
+        
+        .menu {
+            list-style: none;
+            float: right;
+            padding: 0 20px;
+        }
+
+        .menu li {
+            display: inline-block;
+            line-height: 70px;
+        }
+
+        .menu li a {
+            transition: 0.4s;
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 0px 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .menu li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+        .show-btn,
+        .hide-btn,
+        #chk {
+            font-size: 30px;
+            line-height: 70px;
+            color: white;
+            display: none;
+            float: right;
+            padding-right: 20px;
+        }
+
+
+        #banner {
+            width: 100%;
+            margin-top: 90px;
+            height: 680px;
+            margin-bottom: 15px;
+            display: flex;
+            font-size: 40px;
+            color: white;
+        }
+
+        #banner {
+            background-image: url("Practical8 Docs/emile-perron-xrVDYZRGdw4-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #banner b{
+            margin: 20px 20px;
+            color: #fff;
+        }
+        
+
+        #sec-1 {
+            width: 100%;
+            margin: 15px auto;
+        }
+
+        #sec-1::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .circle img{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            float: left;
+            margin-left: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        #sec-2::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        #left-part {
+            width: 50%;
+            height: 550px;
+            background-color: gray;
+            float: left;
+            color: #fff;
+        }
+
+        #about>h2 {
+            text-align: left;
+            margin: 10px 5px;
+        }
+
+        #about>p {
+            font-size: 20px;
+            padding: 10px;
+            text-align: justify;
+            line-height: 28px;
+        }
+
+        #right-part {
+            width: 48%;
+            height: 550px;
+            float: right;
+        }
+
+        .articals {
+            height: 31%;
+            margin-bottom: 20px;
+            background-color: chocolate;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            overflow: hidden;
+        }
+
+        #artical1 {
+            background-image: url("Practical8 Docs/p1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #artical2{
+            background-image: url("Practical8 Docs/p2.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #artical3 {
+            background-image: url("Practical8 Docs/p3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        
+        #sec-3 {
+            width: 100%;
+            margin: 15px auto;
+        }
+
+        #sec-3::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .box {
+            width: 20%;
+            float: left;
+            margin-left: 50px;
+            background-color: lightgrey;
+            border-radius: 8px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        .box>img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .box>h4 {
+            margin: 0px 10px;
+            text-align: center;
+        }
+
+        .box>p {
+            margin: 10px;
+            font-size: 15px;
+            text-align: justify;
+            line-height: 25px;
+            color: white;
+        }
+
+        .box>a {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+            background-color: red;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: black;
+            font-size: 40px;
+            text-align: center;
+            padding: 25px 0px;
+        }
+
+        .box>a:hover {
+            background-color: blue;
+        }
+
+        
+        #footer {
+            background-color: lightgreen;
+            height: 70px;
+        }
+
+        #footer>div {
+            font-size: 16px;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+      
+        @media (min-width: 801px) and (max-width: 1199px) {
+        .menu {
+            list-style: none;
+            float: right;
+        }
+
+        .menu li {
+            line-height: 70px;
+            display: inline-block;
+        }
+
+        .menu li a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 0px 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .menu li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+        html {
+            scroll-padding-top: 70px;
+            scroll-behavior: smooth;
+        }
+
+        #container {
+            width: 100%;
+        }
+
+        .show-btn,
+        .hide-btn,
+        #chk {
+            font-size: 30px;
+            line-height: 70px;
+            color: white;
+            display: none;
+            float: right;
+            padding-right: 20px;
+        }
+
+
+        #header {
+            width: 100%;
+            background-color: grey;
+            position: fixed;
+            top: 0;
+            height: 70px;
+        }
+
+
+        #banner {
+            width: 100%;
+            margin-top: 90px;
+            height: 680px;
+            margin-bottom: 15px;
+            display: flex;
+            font-size: 40px;
+            color: white;
+        }
+
+        #banner {
+            background-image: url("Practical8 Docs/emile-perron-xrVDYZRGdw4-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #banner b{
+            margin: 20px 20px;
+            color: #fff;
+        }
+
+
+        #sec-1 {
+            width: 100%;
+        }
+
+        #sec-1::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .circle{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            float: left;
+            margin-left: 15%;
+            margin-bottom: 20px;
+        }
+
+
+        #sec-2::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        #left-part {
+            width: 48%;
+            height: 550px;
+            background-color: gray;
+            float: left;
+            color: #fff;
+        }
+
+        #about>h2 {
+            text-align: left;
+            margin: 10px 5px;
+        }
+
+        #about>p {
+            font-size: 20px;
+            padding: 10px;
+            text-align: justify;
+            line-height: 28px;
+        }
+
+        #right-part {
+            width: 48%;
+            height: 550px;
+            float: right;
+        }
+
+        .artical {
+            height: 31%;
+            margin-bottom: 20px;
+            background-color: chocolate;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            overflow: hidden;
+        }
+
+        #artical1 {
+            background-image: url("Practical8 Docs/p1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #artical2{
+            background-image: url("Practical8 Docs/p2.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #artical3 {
+            background-image: url("Practical8 Docs/p3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        
+        #sec-3 {
+            width: 100%;
+            margin: 15px auto;
+        }
+
+        #sec-3::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .box {
+            width: 40%;
+            float: left;
+            margin-left: 65px;
+            margin-bottom: 20px;
+            background-color: lightgrey;
+            border-radius: 8px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        .box>img {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+
+        .box>h4 {
+            margin: 0px 10px;
+            text-align: center;
+        }
+
+        .box>p {
+            margin: 10px;
+            font-size: 20px;
+            text-align: justify;
+            line-height: 30px;
+            color: white;
+        }
+
+        .box>a {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+            background-color: red;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: black;
+            font-size: 40px;
+            text-align: center;
+            padding: 25px 0px;
+        }
+
+        .box>a:hover {
+            background-color: blue;
+        }
+
+        
+        #footer {
+            background-color: lightgreen;
+            height: 70px;
+        }
+
+        #footer>p {
+            font-size: 16px;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+        }
+
+
+        @media (max-width: 800px) {
+        #header {
+            width: 100%;
+            background-color: grey;
+            position: fixed;
+            top: 0;
+            height: 70px;
+        }
+
+        .show-btn {
+            display: block;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            background-color: #333;
+            text-align: center;
+            padding: 80px 0px;
+            line-height: normal;
+            transition: 0.7s;
+        }
+
+        .menu li {
+            display: block;
+        }
+
+        .manu li a {
+            display: block;
+        }
+
+        #chk:checked~.menu {
+            right: 0;
+        }
+
+        .hide-btn {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+
+        #banner {
+            width: 100%;
+            height: 350px;
+            margin-bottom: 15px;
+            display: flex;
+            font-size: 30px;
+            color: white;
+            margin-top: 90px;
+        }
+
+        #banner b{
+            margin: 10px 20px;
+            color: #fff;
+        }
+
+        #sec-1 {
+            width: 100%;
+        }
+
+        #sec-1::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .circle{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            float: left;
+            margin-left: 10%;
+            margin-bottom: 20px;
+        }
+
+        #left-part {
+            width: 100%;
+            height: 200px;
+            background-color: gray;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        #about>h2 {
+            text-align: left;
+            margin: 5px 5px;
+        }
+
+        #about>p {
+            font-size: 20px;
+            padding: 10px;
+            text-align: justify;
+            line-height: 28px;
+        }
+
+        #right-part {
+            width: 100%;
+            height: 400px;
+        }
+
+        .artical {
+            height: 31%;
+            margin-bottom: 20px;
+            background-color: chocolate;
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            overflow: hidden;
+        }
+
+        #artical1 {
+            background-image: url("Practical8 Docs/p1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #artical2{
+            background-image: url("Practical8 Docs/p2.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #artical3 {
+            background-image: url("Practical8 Docs/p3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #sec-3 {
+            width: 100%;
+            margin: 15px auto;
+        }
+
+        #sec-3::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .box {
+            width: 40%;
+            float: left;
+            margin-left: 50px;
+            background-color: lightgrey;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        .box>img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .box>h4 {
+            margin: 0px 10px;
+            text-align: center;
+        }
+
+        .box>p {
+            margin: 10px;
+            font-size: 15px;
+            text-align: justify;
+            line-height: 25px;
+            color: white;
+        }
+
+        .box>a {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+            background-color: red;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: black;
+            font-size: 40px;
+            text-align: center;
+            padding: 25px 0px;
+        }
+
+
+        @media (max-width: 625px) {
+
+        #container {
+            min-width: 320px;
+        }
+
+        .show-btn {
+            display: block;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            background-color: #333;
+            text-align: center;
+            padding: 80px 0px;
+            line-height: normal;
+            transition: 0.7s;
+        }
+
+        .menu li {
+            display: block;
+        }
+
+        .menu li a {
+            display: block;
+        }
+
+        #chk:checked~.menu {
+            right: 0;
+        }
+
+        .hide-btn {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+
+        #banner {
+            width: 100%;
+            height: 250px;
+            margin-bottom: 15px;
+            color: white;
+            margin-top: 90px;
+        }
+
+        #banner b{
+            margin: 10px 20px;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        #sec-1 {
+            width: 90%;
+            margin-left: 10%;
+        }
+
+        .circle{
+            height: 70%;
+            width: 70%;
+
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        #left-part {
+            width: 100%;
+            height: 200px;
+            background-color: gray;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        #about>h2 {
+            text-align: left;
+            margin: 5px 5px;
+        }
+
+        #about>p {
+            font-size: 20px;
+            padding: 10px;
+            text-align: justify;
+            line-height: 28px;
+        }
+
+        #right-part {
+            width: 100%;
+            height: 400px;
+        }
+
+        .artical {
+            box-sizing: border-box;
+            height: 31%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            overflow: hidden;
+        }
+
+        #artical1 {
+            background-image: url("Practical8 Docs/p1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #artical2{
+            background-image: url("Practical8 Docs/p2.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #artical3 {
+            background-image: url("Practical8 Docs/p3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #sec-3 {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .box {
+            margin-left: 20px;
+            width: 90%;
+            background-color: lightgrey;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+            max-height: 500px;
+        }
+
+        .box>img {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+
+        .box>h4 {
+            margin: 0px 10px;
+            text-align: center;
+        }
+
+        .box>p {
+            margin: 10px;
+            font-size: 15px;
+            text-align: justify;
+            line-height: 25px;
+            color: white;
+        }
+
+        .box>a {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+            background-color: red;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 25px;
+            padding-bottom: 15px;
+        }
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <div id="header">
+        <input type="checkbox" id="chk" />
+        <label for="chk" class="show-btn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul class="menu">
+            
+            <li><a href="#"><b> HOME </b></a></li>
+            <li><a href="#s1"><b> TEAM </b></a></li>
+            <li><a href="#s2"><b> ABOUT US </b></a></li>
+            <li><a href="#s3"><b> TECHNOLOGIES </b></a></li>
+            <li><a href="#s4"><b> CONTACT </b></a></li>
+
+            <label for="chk" class="hide-btn">
+                <i class="fa fa-times"></i>
+            </label>
+        </ul>
+    </div>
+
+    <div id="banner">
+        <b> PRACTICAL - 9 </b>
+
+    </div>
+
+    <a name="s1"></a>
+    <div id="sec-1">
+        
+        <h1>TEAM MEMBERS</h1>
+
+        <div class="circle">
+            <img src="Practical8 Docs/1.png" alt="member1">
+        </div>
+
+        <div class="circle">
+            <img src="Practical8 Docs/2.png" alt="member2">
+        </div>
+
+        <div class="circle">
+            <img src="Practical8 Docs/3.png" alt="member3">
+        </div>
+
+        <div class="circle">
+            <img src="Practical8 Docs/9.png" alt="member4" >
+        </div>
+    </div>
+
+    <a name="s2"></a>
+    <div id="sec-2">
+        
+        <h1>ABOUT US</h1>
+        <div id="left-part">
+            <div id="about">
+                <h2>About Projects</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quae? Assumenda, hic harum? Sunt repellendus quae modi fugit nobis corporis eum beatae nostrum veniam obcaecati voluptates eveniet quas animi numquam, nesciunt eaque rem eius facere, nihil dolore odit iusto ad! Exercitationem laboriosam dolor dolorum, quo nihil excepturi similique odit perferendis mollitia nam quasi dolores iure earum, esse veniam ullam nobis fugit. Ullam praesentium error nostrum, illo quia maiores asperiores, modi commodi cupiditate repellat unde nemo rerum pariatur! Reprehenderit nihil ea quae eaque, animi tempora labore sequi non odio culpa corporis itaque velit ad nemo vel libero, aliquid nisi accusantium eveniet quod. Cumque a eaque, cupiditate repellendus ullam sunt corrupti necessitatibus eum repellat enim perferendis doloribus laboriosam quos vero quod minima! Molestiae hic nam vitae quae asperiores facilis quas qui sequi velit eveniet commodi ducimus voluptate ipsam aliquid, dolor est eaque incidunt accusantium alias debitis sunt, ea similique esse! Eligendi voluptatibus quam nesciunt magnam? Odit dicta labore molestias commodi totam ab maiores, ullam at autem expedita alias nisi consectetur doloremque, obcaecati nesciunt nulla consequatur dignissimos excepturi sunt reiciendis? Quibusdam veniam eveniet soluta ex esse nesciunt quod harum tenetur a nisi pariatur, neque voluptate voluptas libero unde repellat ipsam assumenda. Similique, sunt.
+                </p>
+            </div>
+        </div>
+
+        <div id="right-part">
+            <div class="articals" id="artical1" >
+                <h2>PROJECT 1</h2>
+            </div>
+
+            <div class="articals " id="artical2">
+                <h2>PROJECT 2</h2>
+            </div>
+
+            <div class="articals " id="artical3">
+                <h2>PROJECT 3</h2>
+            </div>
+        </div>
+    </div>
+    <br>
+    <a name="s3"></a>
+    <div id="sec-3">
+        
+        <h1>TECHNOLOGIES USED</h1>
+        <div class="box">
+            <img src="https://imgur.com/joZlsqC.png" alt="" />
+            <h4>Introduction to HTML</h4>
+            <p>
+                Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies
+            </p>
+            <a href="Practical5 Docs/Html.html">Read More</a>
+        </div>
+        <div class="box">
+            <img src="https://imgur.com/8F89zk5.png" alt="" />
+            <h4>Introduction to CSS</h4>
+            <p>
+                Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable. CSS handles
+            </p>
+            <a href="Practical5 Docs/Css.html">Read More</a>
+        </div>
+        <div class="box">
+            <img src="https://imgur.com/YWiaReD.png" alt="" />
+            <h4>Introduction to JavaScript</h4>
+            <p>
+                JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons,
+            </p>
+            <a href="Practical5 Docs/Javascript.html">Read More</a>
+        </div>
+        <div class="box">
+            <img src="https://imgur.com/L0JabFG.jpg" alt="" />
+            <h4>Introduction to JavaScript</h4>
+            <p>
+                Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript
+            </p>
+            <a href="Practical5 Docs/Bootstrap.html">Read More</a>
+        </div>
+    </div>
+
+    <a name="s4"></a>
+    <h1>CONTACT</h1>
+    <div id="sec-4">
+        <div id="footer">
+            <div>
+                Website Template for Practical-9 © 
+                <a href="index.html" target="_blank"> Practicals </a>
+                <p ><a id="backtotop" href="#top">Back to Top</a></p>
+            </div>
+        </div>
+    
+    </div>
+</div>
+    
+    
+</body>
+</html>
