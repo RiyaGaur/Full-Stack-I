@@ -15,24 +15,21 @@
         table{
             border-radius: 6px;
             border:2px solid #34495e;
-            /* border-collapse: collapse; */
-            border-spacing: 0;
-            /* padding: 10px; */
+            border-collapse: collapse; 
             margin: 30px auto;
         }
         tbody td, tbody th{
             padding: 15px 15px;
-            /* border-top:1px solid rgb(122, 121, 121); */
             border-bottom:1px solid rgba(122, 121, 121, 0.4);
         }
         tbody th{
             text-align:left;
-            border-bottom-width: 2.5px;
+            border-bottom-width: 2px;
         }
         thead th{
             background:#34495e;
             color: white;
-            padding: 10px 5px;
+            padding: 10px 25px;
             height:60px;
             font-size: 25px;
         }
@@ -50,20 +47,22 @@
         }
         td:nth-child(5){
             width:100px;
-        }
-        .done{
+        } 
+        .check{
             color: green;
         }
-        .undone{
+        .uncheck{
             color: red;
         }
         td a{
             text-decoration: none;
             color: black;
             opacity: 0.7;
+            transition: 0.5s;
         }
         td a:hover{
             color: royalblue;
+            opacity: 0.8;
             font-weight: bold;
         }
         tr:hover{
@@ -73,7 +72,7 @@
         .fa{
             font-size: 23px;
             color:rgba(92, 89, 89, 0.7);
-            /* opacity: 0.7; */
+            transition: 0.7s;
         }
         .fa:hover{
             color:rgb(28, 65, 228)
@@ -102,84 +101,84 @@
                 <td>1</td>
                 <td>Create a Web page including HTML basic skeleton using Offline HTML Editor and Online Sandbox Environment.</td>
                 <td><a href="Practical1..html" title="Practical-1">Practical-1</a></td>
-                <td class="done">Checked</td>
+                <td class="check">Checked</td>
                 <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Live your First Web-Page on Git-Hub.</td>
                 <td><a href="Practical2..html" title="Practical-2">Practical-2</a></td>
-                <td class="done">Checked</td>
+                <td class="check">Checked</td>
                 <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>Create a web page showing a basic html structure using character Entities and span Tag.</td>
                 <td><a href="Practical3..html" title="Practical-3">Practical-3</a></td>
-                <td class="done">Checked</td>
+                <td class="check">Checked</td>
                 <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>Create a website having list of all practical and their individual practical Page links.</td>
                 <td><a href="Practical4..html" title="Practical-4">Practical-4</a></td>
-                <td class="done">Checked</td>
+                <td class="check">Checked</td>
                 <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>Create a Web-Page showing the use of Image-Map in the Web Application.</td>
                 <td><a href="Practical5..html" title="Practical-5">Practical-5</a></td>
-                <td class="done">Checked</td>
+                <td class="check">Checked</td>
                 <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
             </tr>
             <tr>
                 <td>6</td>
                 <td>Create following layout using CSS layout properties.</td>
                 <td><a href="Practical6..html" title="Practical-6">Practical-6</a></td>
-                <td class="done">Checked</td>
+                <td class="check">Checked</td>
                 <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
             </tr>
             <tr>
                 <td>7</td>
                 <td>Create a Webpage Layout using div tag.</td>
                 <td><a href="Practical7..html" title="Practical-7">Practical-7</a></td>
-                <td class="done">Checked</td>
+                <td class="check">Checked</td>
                 <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
             </tr>
             <tr>
                 <td>8</td>
                 <td>Create a Webpage having Fixed Navigation Bar with the given content.</td>
                 <td><a href="Practical8..html" title="Practical-8">Practical-8</a></td>
-                <td class="done">Checked</td>
+                <td class="check">Checked</td>
                 <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
             </tr>
             <tr>
                 <td>9</td>
                 <td>Create a Responsive Web Layout with Responsive Navigation Bar.</td>
                 <td><a href="Practical9..html" title="Practical-9">Practical-9</a></td>
-                <td class="done">Checked</td>
+                <td class="check">Checked</td>
                 <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
             </tr>
             <tr>
                 <td>10</td>
                 <td>Create a Responsive Side-Bar Navigation Menu.</td>
                 <td><a href="Practical10..html" title="Practical-10">Practical-10</a></td>
-                <td class="undone">Un-checked</td>
+                <td class="uncheck">Un-checked</td>
                 <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
             </tr>
             <tr>
                 <td>11</td>
                 <td>Create FullStack Live Practical Book.</td>
                 <td><a href="Practical11..html" title="Practical-11">Practical-11</a></td>
-                <td class="undone">Un-checked</td>
+                <td class="uncheck">Un-checked</td>
                 <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
             </tr>
             <tr>
                 <td>12</td>
                 <td>Create a Custom Price Table Template.</td>
                 <td><a href="Practical12..html" title="Practical-12">Practical-12</a></td>
-                <td class="undone">Un-checked</td>
+                <td class="uncheck">Un-checked</td>
                 <td><a href = "#" title="Edit"><i class="fa fa-pencil"></i></a><a href = "#" title="Delete"><i class="fa fa-trash"></i></a></td>
             </tr>
         </table>
