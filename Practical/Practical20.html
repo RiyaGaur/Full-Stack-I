@@ -13,35 +13,81 @@
     <title>Bootstrap Grid</title>
     <style>
         .row {
-            height: 140px;
+            margin-bottom: 15px;
         }
 
-        /* .box {
-            padding: 0 0;
-            border: 5px solid black;
-            background-clip: padding-box;
-        } */
+        .top {
+            min-height: 90px;
+        }
+
+        .bottom {
+            min-height: 60px;
+        }
+
+        .left {
+            min-height: 300px;
+        }
+
+        .right-top {
+            min-height: 140px;
+        }
+
+        .right-bottom {
+            min-height: 145px;
+            margin-bottom: -15px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row mt-3">
-            <div class="col-md-12 bg-info h-100"></div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-md-8 bg-warning h-100"></div>
-            <div class="col-md-4 bg-primary h-95 mb-2"></div>
+    <div class="container mt-3">
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="top bg-info"></div>
+            </div>
         </div>
         <div class="row">
-            <div class="col-md-8 bg-warning h-100"></div>
-            <div class="col-md-4 bg-danger h-95 mt-2"></div>
+            <div class="col-md-7">
+                <div class="left bg-warning"></div>
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="right-top bg-primary"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="right-bottom bg-danger"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row mt-3 mb-5">
-            <div class="col-md-12 bg-secondary h-50"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="bottom bg-dark"></div>
+            </div>
         </div>
     </div>
+
 
 </body>
 
 </html>
+
+<!-- <div class="container">
+    <div class="row mt-3">
+        <div class="col-md-12 bg-info h-100"></div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-8 bg-warning h-100"></div>
+        <div class="col-md-4 bg-primary h-95 mb-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 bg-warning h-100"></div>
+        <div class="col-md-4 bg-danger h-95 mt-2"></div>
+    </div>
+    <div class="row mt-3 mb-5">
+        <div class="col-md-12 bg-secondary h-50"></div>
+    </div>
+</div> -->
