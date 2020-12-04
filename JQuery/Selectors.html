@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <h1 class="text-center">JQuery Selectors</h1>
+        <hr>
+        <h2 class="heading1">
+            Heading 1
+        </h2>
+        <p id="para1" class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti eius,
+            quia, praesentium distinctio ea numquam voluptatem labore vel molestiae animi doloribus dicta perspiciatis
+            veritatis <span>maiores dolores</span> aspernatur! Reiciendis, ab dolorem ex exercitationem autem hic
+            necessitatibus
+            culpa quo totam veritatis asperiores odit expedita natus aliquam obcaecati quas porro esse accusantium!
+            Esse.</p>
+
+        <h2 class="heading2">
+            Heading 2
+        </h2>
+        <p id="para2" class="elem2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti
+            eius, quia,
+            praesentium distinctio ea numquam voluptatem labore vel molestiae animi doloribus dicta perspiciatis
+            veritatis <span>maiores dolores</span> aspernatur! Reiciendis, ab dolorem ex exercitationem autem hic
+            necessitatibus
+            culpa quo totam veritatis asperiores odit expedita natus aliquam obcaecati quas porro esse accusantium!
+            Esse.</p>
+
+        <ul>
+            <li>List Items</li>
+            <li>List Items</li>
+            <li>List Items</li>
+            <li>List Items</li>
+            <li>List Items</li>
+            <li>List Items</li>
+        </ul>
+        <input class="btn btn-primary" type="button" value="Button">
+        <input class="btn btn-danger" type="submit" value="Submit">
+        <input type="text" class="form-control w-50">
+        <a href="http://twitter.com"></a>
+        <a href="http://facebook.com"></a>
+    </div>
+    <div class="mb-5"></div>
+
+    <script>
+        $(document).ready(function () {
+            // $('#heading1', "#para1").hide();
+            // $('.elem2').hide();
+            // $('h2','p1').hide();
+            // $('p.elem2').hide();
+            $('p span').css({ 'color': 'red', 'font-size': '24px' });
+            $('ul li:first').css({ 'color': 'blue' });
+            $('ul li:last').css({ 'color': 'brown' });
+            $('ul li:even').css({ 'background-color': 'yellow' });
+            $('ul li:odd').css({ 'background-color': 'grey' });
+            $('li:nth-child(3n)').css('list-style', 'none');
+
+            // Targeting the elements
+
+            // $('input[type=text').hide();
+
+            $('a[href="http://twitter.com"]').css('color', 'red');
+        });
+    </script>
+
+
+</body>
+
+</html>
