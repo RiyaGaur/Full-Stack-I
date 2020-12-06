@@ -2,6 +2,12 @@
 
 <h4> View my practicals live on <a href="https://riyagaur.github.io/Full-Stack-I/Practical/Index.html" target="_blank">https://riyagaur.github.io/Full-Stack-I/Practical/Index.html</a></h4>
 
+<h2>Cdn</h2>
+<h5>Paste them in head</h5>
+<h4>Bootstrap: https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css </h4>
+<h4>JQuery: https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js </h4>
+
+
 <h2>HTML</h2>
 <h4><a href="https://riyagaur.github.io/Full-Stack-I/HTML/01_First%20Web%20Page.html" target="_blank">HTML Block Elements</a></h4>
 <h4><a href="https://riyagaur.github.io/Full-Stack-I/HTML/02_Formatted%20Paragraph%20and%20Preformated%20Text.html" target="_blank">Formatted Paragraphs And Preformatted Text</a></h4>
